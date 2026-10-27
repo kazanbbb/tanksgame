@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Танчики.io</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="lobby">
+ <h1>ТАНЧИКИ.IO</h1>
+ <div class="card"><div class="row"><b id="best"></b><span id="coins"></span></div>
+  <canvas id="pv" width="260" height="150"></canvas>
+  <small class="mu">Эволюция танка: уровни 5, 10, 15 и 20 в бою</small></div>
+ <div class="card" id="ups"></div>
+ <div class="card">
+  <button class="btn rd pulse" id="go">В БОЙ</button>
+  <div class="row"><button class="btn" id="bQ">Квесты сообщества</button><button class="btn" id="bD">Бонус дня</button></div>
+ </div>
+</div>
+<div id="game"><canvas id="cv"></canvas>
+ <div id="hud"><div><b id="hl"></b><div class="bar"><i id="hx"></i></div></div><div id="lb"></div></div>
+ <div id="joy"><div id="knob"></div></div><button id="fire">ОГОНЬ</button></div>
+<div id="modal"><div class="card" id="mc"></div></div><div id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@vkontakte/vk-bridge@2.15.2/dist/browser.min.js"></script>
+<script src="game.js"></script>
+</body></html>
